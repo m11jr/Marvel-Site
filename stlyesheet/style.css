@@ -89,37 +89,53 @@ align-items: flex-start;
 
 }
 
-
-.AnimatedMovies{
+.MovieTab{
   width: 100%;
   height: 500px;
-  background-color: white;
+  background:url(../assests/marvel-avengers.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-.AnimatedMovies .FavMovies, .AnimatedMovies .PlannedMovies{
+.MovieTab h2{
+  font-family: Garamond, serif;
+  color: white;
+}
+.MovieTab .LatestMovies , .MovieTab .PlannedMovies{
   float: left;
 }
-.FavMovies{
-  width: 70%;
+.LatestMovies{
+  width: 100%;
   height: 500px;
-  background-color: blue;
+
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
+align-items: center;
 }
-.FavMovies div{
-width: 75px;
-background-color: red;
+.movie1{
+  width: 7%;
+  height: 200px;
 overflow: hidden;
-height: 220px;
-transition: width 2s;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
 }
 
-.FavMovies img{
-  width: 150px;
-transform: translateX(-30%);
+.movie1 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
 }
-.FavMovies div:hover{
-  width: 150px;
-  overflow: visible;
+.movie1:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie1 img:hover{
+  width: 100%;
+  height:100%;
 }
 
 
@@ -128,14 +144,325 @@ transform: translateX(-30%);
 
 
 
+.movie2{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie2 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
 
 
+}
+.movie2:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie2 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+.movie3{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie3 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie3:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie3 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+.movie4{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie4 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie4:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie4 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+.movie5{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie5 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie5:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie5 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+.movie6{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie6 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie6:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie6 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+.movie7{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie7 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie7:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie7 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+.movie8{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie8 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie8:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie8 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+.movie9{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie9 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie9:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie9 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+.movie10{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie10 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie10:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie10 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+
+.movie11{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie11 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie11:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie11 img:hover{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+
+.movie12{
+  width: 7%;
+  height: 200px;
+overflow: hidden;
+    position: relative;
+    transition: width 2s ease, height 2s ease;
+}
+
+.movie12 a img{
+width: 100%;
+height: 120%;
+object-fit: cover;
+     transition: width 2s ease, height 2s ease;
+
+
+}
+.movie12:hover{
+  width: 20%;
+  height: 100%;
+}
+.movie12 img:hover{
+  width: 100%;
+  height:100%;
+}
 
 .PlannedMovies{
   width: 30%;
-  height: 500px;
-  background-color: green;
+  height:500px;
+  background-color: yellow;
 }
+
+
+
+
 
 
 
@@ -156,5 +483,12 @@ transform: translateX(-30%);
   }
   .navigation li button{
     display:inline;
+  }
+
+  #hidesmall{
+    display: none;
+  }
+  .movie1, .movie2, .movie3, .movie4{
+    width: 20%;
   }
 }

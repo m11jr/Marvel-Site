@@ -21,7 +21,7 @@
     <ul class="navigation2" id="SideBar">
 <li><img src="assests/MarvelLogo.png" alt=""></li>
 <li><button type="button" name="button" onclick="closeSide()">X</button></li>
-      <li><a href="#">Home</a></li>
+      <li><a href="#"> Home </a></li>
       <li><a href="#">Films</a></li>
       <li><a href="#">Series</a></li>
       <li><a href="#">Information</a></li>
@@ -30,19 +30,53 @@
   </div>
 </header>
 
-<section class="AnimatedMovies">
-<div class="FavMovies">
-  <div class="mov1"><a href="#"> <img src="assests/AvEndGame.jpg" alt=""></a>  </div>
-    <div class="mov2">  <a href="#"> <img src="assests/AvEndGame.jpg" alt=""></a> </div>
-      <div class="mov3"> <a href="#"> <img src="assests/AvEndGame.jpg" alt=""></a> </div>
-        <div class="mov4"> <a href="#"> <img src="assests/AvEndGame.jpg" alt=""></a> </div>
-          <div class="mov5"> <a href="#"> <img src="assests/AvEndGame.jpg" alt=""></a> </div>
+<section class="MovieTab" id="Movies">
+  <!-- <h2>Latest Marvel Movies</h2> -->
+
+<div class="LatestMovies">
+  <div class="movie1">
+    <a href="#"> <img src="assests/DeadpoolAndWolverine.jpg" alt="" onmouseover="changeBackground('DeadpoolWolverineBack.gif')" onmouseout="resetBackground()"> </a>
+  </div>
+  <div class="movie2" onmouseover="changeBackground('TheMarvelsGif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/TheMarvels.jpg" alt=""> </a>
+  </div>
+  <div class="movie3" onmouseover="changeBackground('GOTGvol3Gif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/GuardiansVol3.jpg" alt=""> </a>
+  </div>
+  <div class="movie4" onmouseover="changeBackground('AntMan-quagif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/AntMan-Qua.jpg" alt=""> </a>
+  </div>
+  <div  id="hidesmall" class="movie5"  onmouseover="changeBackground('WakandaForevergif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/BlackPanther-Wakanda.jpeg" alt=""> </a>
+  </div>
+  <div  id="hidesmall" class="movie6"  onmouseover="changeBackground('Thor-LOTgif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/Thor-LAT.jpeg" alt=""> </a>
+  </div>
+  <div  id="hidesmall" class="movie7"  onmouseover="changeBackground('MOMGif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/DoctorStrange-MOM.jpg" alt=""> </a>
+  </div>
+  <div id="hidesmall" class="movie8"  onmouseover="changeBackground('NWYgif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/SpiderMan-NWH.jpg" alt=""> </a>
+  </div>
+  <div id="hidesmall" class="movie9"  onmouseover="changeBackground('Eternalsgif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/Eternals.jpg" alt=""> </a>
+  </div>
+  <div id="hidesmall" class="movie10"  onmouseover="changeBackground('Shangchigif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/Shang-Chi.jpg" alt=""> </a>
+  </div>
+
+  <div id="hidesmall" class="movie11"  onmouseover="changeBackground('FFHgif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/SpiderMan-FFH.jpg" alt=""> </a>
+  </div>
+  <div id="hidesmall" class="movie12"  onmouseover="changeBackground('EndGameGif.gif')" onmouseout="resetBackground()">
+    <a href="#"> <img src="assests/AvEndGame.jpg" alt=""> </a>
+  </div>
 
 </div>
 
-<div class="PlannedMovies">
+<!-- <div class="PlannedMovies">
 
-</div>
+</div> -->
 
 
 </section>
@@ -51,6 +85,14 @@
 
 
 
-<script src="script/script.js" charset="utf-8"></script>
+
+
+<script src="script/script.js" charset="utf-8">
+
+
+</script>
+
+
+
 </body>
 </html>
