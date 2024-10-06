@@ -1,0 +1,160 @@
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body{
+background-image: url(../assests/siteBackground.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+  min-height: 100vh;
+}
+.navbar{
+  background: #000000;
+}
+.navbar .navigation{
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.navigation li{
+  padding-left: 1px;
+}
+.navigation a ,.navigation2 a{
+  padding: 20px;
+color: #ffffff;
+text-decoration: none;
+}
+.navigation a:hover{
+  background-color: rgba(80,74,75,0.5);
+}
+
+.navbar img{
+  width: 100px;
+  padding-left: 7px;
+}
+.navbar li:first-child{
+  margin-right: auto;
+}
+.navigation li button{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border:2px solid white;
+display: none;
+}
+.navigation2 li button{
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  background-color: red;
+  border:2px solid white;
+  margin-right: auto;
+}
+
+.navigation2{
+  visibility:hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px !important;
+  z-index: 999;
+background-color: rgba(90, 90, 90, 0.5); :
+  display: flex;
+  flex-direction: column;
+
+
+align-items: flex-start;
+}
+.navigation2 {
+  list-style-type: none;
+}
+.navigation2 li{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+
+}
+.navigation2 li:first-child{
+  display: none;
+
+}
+
+
+.AnimatedMovies{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+}
+.AnimatedMovies .FavMovies, .AnimatedMovies .PlannedMovies{
+  float: left;
+}
+.FavMovies{
+  width: 70%;
+  height: 500px;
+  background-color: blue;
+display: flex;
+justify-content: center;
+}
+.FavMovies div{
+width: 75px;
+background-color: red;
+overflow: hidden;
+height: 220px;
+transition: width 2s;
+}
+
+.FavMovies img{
+  width: 150px;
+transform: translateX(-30%);
+}
+.FavMovies div:hover{
+  width: 150px;
+  overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+.PlannedMovies{
+  width: 30%;
+  height: 500px;
+  background-color: green;
+}
+
+
+
+
+
+@media screen and (min-width:577px) and (max-width:768px) {
+.navigation li button{
+  display:none;
+}
+
+}
+
+
+
+@media screen and (max-width:576px) {
+  .displaysmall{
+    display: none;
+  }
+  .navigation li button{
+    display:inline;
+  }
+}
