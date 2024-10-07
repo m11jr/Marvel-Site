@@ -21,6 +21,32 @@ function resetBackground() {
   document.getElementById('Movies').style.backgroundImage = "url('assests/marvel-avengers.gif')";
 }
 
+
+
+
+
+
+var movies = document.querySelectorAll('.moviesW');
+
+// Add event listeners to all movies
+movies.forEach(function(movie) {
+  movie.addEventListener('mouseover', function() {
+    movies.forEach(function(otherMovie) {
+      if (otherMovie !== movie) {
+        otherMovie.style.width = '5%';  // Shrink other movies to 3%
+      }
+    });
+    movie.style.width = '40%';  // Keep the hovered movie at 20%
+  });
+
+  movie.addEventListener('mouseout', function() {
+    movies.forEach(function(otherMovie) {
+      otherMovie.style.width = '7%';  // Reset all movies to original width
+    });
+  });
+});
+
+
 // function backgroundChanger(){
 // var oldback = document.querySelector('.movie1 img');
 // oldback.style.backgroundImage="url(..\assests\DeadpoolWolverineBack.gif)";

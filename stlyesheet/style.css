@@ -445,6 +445,10 @@ object-fit: cover;
 
 
 }
+.movie12:hover .movie1{
+  width: 3% !important;
+}
+
 .movie12:hover{
   width: 20%;
   height: 100%;
@@ -453,12 +457,21 @@ object-fit: cover;
   width: 100%;
   height:100%;
 }
+.LatestMovies.shrink .moviesW {
+  width: 3%;
+}
+
+/* .LatestMovies.shrink .movie12 {
+  width: 20% !important;
+}
 
 .PlannedMovies{
   width: 30%;
   height:500px;
   background-color: yellow;
-}
+} */
+
+
 
 
 
@@ -472,6 +485,17 @@ object-fit: cover;
 .navigation li button{
   display:none;
 }
+.hidemiddle{
+  display: none;
+}
+.movie1, .movie2, .movie3, .movie4, .movie5, .movie6{
+  width: 15%;
+}
+
+.movie1:hover{
+  width: 25%;
+}
+
 
 }
 
@@ -485,10 +509,10 @@ object-fit: cover;
     display:inline;
   }
 
-  #hidesmall{
+  .hidesmall{
     display: none;
   }
   .movie1, .movie2, .movie3, .movie4{
-    width: 20%;
+    width: 24%;
   }
 }
