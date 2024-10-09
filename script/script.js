@@ -66,11 +66,13 @@ elDeadPoolBodyBack = document.getElementById('WholeContent');
 
 elDeadPoolBody.addEventListener('click', function(){
   elDeadPoolBodyBack.style.backgroundImage = 'url("assests/siteBackground2.png")';
-  const Deadpoolcontainer = document.getElementsByClassName('MovieInfoImg')[0];
-
+  const Deadpoolcontainerimg = document.getElementsByClassName('MovieInfoImg')[0];
+const Deadpoolcontainertext = document.getElementsByClassName('MovieInfoText')[0];
   const existingImage = Deadpoolcontainer.querySelector('img');
+  const existingTextH3 =Deadpoolcontainertext.querySelector('h3')
+    const existingTextp =Deadpoolcontainertext.querySelector('p')
 
-  if (!existingImage) {
+  if (!existingImage && !existingTextp && !existingTextH3) {
 
 
 const imageDeadPool = document.createElement('img');
@@ -78,7 +80,11 @@ imageDeadPool.src = 'assests/DeadpoolAndWolverine.jpg';
 imageDeadPool.alt = "Deadpool And Wolverine IMG";
 imageDeadPool.width = '100%';
 imageDeadPool.height = '100%';
-Deadpoolcontainer.appendChild(imageDeadPool);
+
+
+
+
+Deadpoolcontainerimg.appendChild(imageDeadPool);
 }
 
 
