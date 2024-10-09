@@ -68,7 +68,7 @@ elDeadPoolBody.addEventListener('click', function(){
   elDeadPoolBodyBack.style.backgroundImage = 'url("assests/siteBackground2.png")';
   const Deadpoolcontainerimg = document.getElementsByClassName('MovieInfoImg')[0];
 const Deadpoolcontainertext = document.getElementsByClassName('MovieInfoText')[0];
-  const existingImage = Deadpoolcontainer.querySelector('img');
+  const existingImage = Deadpoolcontainerimg.querySelector('img');
   const existingTextH3 =Deadpoolcontainertext.querySelector('h3')
     const existingTextp =Deadpoolcontainertext.querySelector('p')
 
@@ -78,12 +78,23 @@ const Deadpoolcontainertext = document.getElementsByClassName('MovieInfoText')[0
 const imageDeadPool = document.createElement('img');
 imageDeadPool.src = 'assests/DeadpoolAndWolverine.jpg';
 imageDeadPool.alt = "Deadpool And Wolverine IMG";
-imageDeadPool.width = '100%';
-imageDeadPool.height = '100%';
+imageDeadPool.width = '70%';
+imageDeadPool.height = '70%';
 
 
+const h3DeadPool = document.createElement('h3');
+h3DeadPool.innerHTML = "Deadpool & Wolverine";
+h3DeadPool.style.color = 'white';
+h3DeadPool.style.fontSize = '2.1vw';
 
 
+const pDeadPool = document.createElement('p');
+pDeadPool.innerHTML = '<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>'
+pDeadPool.style.color = 'white';
+pDeadPool.style.paddingTop = "25px !important"
+
+Deadpoolcontainertext.appendChild(h3DeadPool);
+Deadpoolcontainertext.appendChild(pDeadPool);
 Deadpoolcontainerimg.appendChild(imageDeadPool);
 }
 
